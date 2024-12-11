@@ -14,9 +14,7 @@ def set_global_seed(seed_value):
     tf.random.set_seed(seed_value)
 
 
-import tensorflow as tf
-
-def rotate_image(image, rotation_range):
+def random_rotate(image, rotation_range):
     """Rotate the image within the specified range and fill blank space with nearest neighbor."""
     # Generate a random rotation angle in radians
     theta = tf.random.uniform([], -rotation_range, rotation_range) * tf.constant(3.14159265 / 180, dtype=tf.float32)
@@ -70,8 +68,6 @@ def rotate_image(image, rotation_range):
 
     return tf.squeeze(rotated_image)
 
-
-import tensorflow as tf
 
 def random_translate(image, width_factor, height_factor):
     """Randomly translate the image horizontally and vertically within the specified factors.
