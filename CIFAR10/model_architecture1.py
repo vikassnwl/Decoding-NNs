@@ -3,7 +3,7 @@ import tensorflow as tf
 
 def create_model_1():
     model = tf.keras.Sequential([
-        tf.keras.layers.Input(shape=(32, 32, 1)),
+        tf.keras.layers.Input(shape=(32, 32, 3)),
         tf.keras.layers.Conv2D(96, 3, padding="same", activation="relu"),
         tf.keras.layers.Dropout(0.2),
         tf.keras.layers.Conv2D(96, 3, padding="same", activation="relu"),
