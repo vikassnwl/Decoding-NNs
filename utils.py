@@ -3,6 +3,9 @@ import numpy as np
 import tensorflow as tf
 
 
+cifar10_classes = ["airplane", "automobile", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck"]
+
+
 def set_global_seed(seed_value):
     # Set random seed for Python's random module
     random.seed(seed_value)
