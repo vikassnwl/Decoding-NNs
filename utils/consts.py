@@ -1,0 +1,1 @@
+MODEL_DIR = "/home/vikas/Lab/Decoding NNs/models"
