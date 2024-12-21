@@ -3,6 +3,8 @@ env/
 models/
 tmp/
 checkpoints/
+experiments/
+datasets/
 
 
 # Byte-compiled / optimized / DLL files
